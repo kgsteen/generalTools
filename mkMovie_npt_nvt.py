@@ -155,7 +155,7 @@ if __name__ == "__main__":
     else:
         a = np.genfromtxt(x[2:5], comments='\n')
         for i in range(int(nfrm / evIt)):
-            traj.append(build_superNPT(natAr, N, rpt, x, cnt, a))
+            traj.append(build_superNVT(natAr, N, rpt, x, cnt, a))
             cnt += (N + 1) * evIt
 
     # Write to XYZ file
